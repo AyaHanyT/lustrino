@@ -1,0 +1,480 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.5.1/sweetalert2.min.css"
+        integrity="sha512-y6TjkITSFkRB9mZmDaJyDOsyHsYvOo3Np3iAKe02HgMDP4L4vbmbhlzNpbbIVC1x+GUUHvepTd1BKDe4kC6kNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta property="og:site_name" content="LUSTRIO2">
+    <meta property="og:title" content="LUSTRIO2">
+    <meta property="og:description" content="LUSTRIO2">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image" content="https://lustrio2.eaglefits.net/img/logo.png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" href="assets/img/icon.png">
+    <title>LUSTRIO2</title>
+</head>
+
+<body id="Home-page">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/lustrino2.png" alt="" class="img-fluid"></a>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="search-item">
+                        <form action="" class="">
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-lg"
+                                    placeholder="أبحث عن ما تريد....">
+                                <button type="submit" class="input-group-text">
+                                    <i class="fal fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </li>
+                    <div class="shcut">
+                        <li>
+                            <a class="nav-link" href="https://lustrio2.eaglefits.net/favorite/index" tabindex="-1">
+                                <i class="fi fi-sr-heart"></i> </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://lustrio2.eaglefits.net/cart" tabindex="-1">
+                                <i class="fi fi-sr-shopping-cart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://lustrio2.eaglefits.net/user/profile" tabindex="-1">
+                                <i class="fi fi-sr-user"></i> </a>
+                        </li>
+                    </div>
+                </ul>
+                <i class="fa fa-bars mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main class="page">
+        <div class="msg">
+            <a href="#contact-us">
+                <img src="assets/img/message.gif" alt="" class="img-fluid">
+            </a>
+        </div>
+
+        <section class="cart-page">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="title">
+                        <h2>
+                            العربة
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-12">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item flex-sm-fill" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">ملخص الطلب</button>
+                                <hr>
+                            </li>
+                            <li class="nav-item flex-sm-fill" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">العنوان</button>
+                                <hr>
+                            </li>
+                            <li class="nav-item flex-sm-fill" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">الدفع</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="cart-item-info">
+                                    <div class="card-item">
+                                        <button id="removeCart" type="button" data=4
+                                            class="button-remove close-circle"><i class="fal fa-times"></i></button>
+                                        <img class="img-fluid cart-img"
+                                            src="https://lustrio2.eaglefits.net/storage/products/ri_38.png">
+                                        <div class="quantity">
+                                            <h4 class="product-title">{{ $rp->title }}</h4>
+                                            <div class="d-flex">
+                                                <button class="btn quty-btn button" data-quantity="pluss"
+                                                    data-field="quantity">
+                                                    <i class="fi fi-sr-plus"></i>
+                                                </button>
+                                                <input value="1" minlength="1" type="number" name="quantity" id="quty"
+                                                    class="quty-input">
+                                                <button class="btn quty-btn button" data-quantity="minuss"
+                                                    data-field="quantity">
+                                                    <i class="fi fi-sr-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gapp-4">
+                                        <h4 class="product-price" data=210>420</h4>
+                                        <h4>ريال</h4>
+                                    </div>
+                                </div>
+                                <div class="cart-item-info">
+                                    <div class="card-item">
+                                        <button id="removeCart" type="button" data=4
+                                            class="button-remove close-circle"><i class="fal fa-times"></i></button>
+                                        <img class="img-fluid cart-img"
+                                            src="https://lustrio2.eaglefits.net/storage/products/ri_38.png">
+                                        <div class="quantity">
+                                            <h4 class="product-title">{{ $rp->title }}</h4>
+                                            <div class="d-flex">
+                                                <button class="btn quty-btn button" data-quantity="pluss"
+                                                    data-field="quantity">
+                                                    <i class="fi fi-sr-plus"></i>
+                                                </button>
+                                                <input value="1" minlength="1" type="number" name="quantity" id="quty"
+                                                    class="quty-input">
+                                                <button class="btn quty-btn button" data-quantity="minuss"
+                                                    data-field="quantity">
+                                                    <i class="fi fi-sr-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gapp-4">
+                                        <h4 class="product-price" data=210>420</h4>
+                                        <h4>ريال</h4>
+                                    </div>
+                                </div>
+                                <div class="total">
+                                    <h4>إجمالي الطلب</h4>
+                                    <h4 class="cart-total">
+                                        420
+                                        ريال
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="address-field mb-4">
+                                    <h2 class="sub-title">
+                                        بينات الشحن
+                                    </h2>
+                                    <a href="https://lustrio2.eaglefits.net/user/profile" class="change-address">تغيير
+                                        بينات الشحن</a>
+                                </div>
+                                <div class="address-field">
+                                    <h4>
+                                        العنوان
+                                    </h4>
+                                    <textarea disabled class="form-control" name="address" id="address" cols="30"
+                                        rows="2">6 October city , Degla Palms 6 October City</textarea>
+                                </div>
+                                <div class="address-field">
+                                    <h4>
+                                        المدينة
+                                    </h4>
+                                    <input disabled class="form-control" value="">
+                                </div>
+                                <div class="address-field">
+                                    <h4>
+                                        الرمز البريدي
+                                    </h4>
+                                    <input disabled class="form-control" value="">
+                                </div>
+                                <div class="address-field">
+                                    <h4>الدور</h4>
+                                    <input disabled class="form-control" value="الدور ">
+                                </div>
+                                <div class="address-field">
+                                    <h4>
+                                        رقم الجوال
+                                    </h4>
+                                    <input disabled class="form-control" name="phone" id="phone" value="+201142914295">
+                                </div>
+                                <div class="d-flex">
+                                    <h4>
+                                        يصل خلال من 5 إلي 7 أيام عمل
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="address-field">
+                                    <h4>
+                                        اجمالي الطلب
+                                    </h4>
+                                    <h4> 420 ريال </h4>
+                                </div>
+                                <div class="address-field shipping-choice">
+                                    <h4>
+                                        نوع الشحن
+                                    </h4>
+                                    <div class="d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                شحن LUSTRIO2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                شحن خارجي
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="address-field">
+                                    <h4>
+                                        الشحن
+                                    </h4>
+                                    <h4>
+                                        <span id="ship_val">40</span>
+                                        ريال
+                                    </h4>
+                                </div>
+                                <div class="address-field">
+                                    <h4>
+                                        الضريبة
+                                    </h4>
+                                    <h4>
+                                        63
+                                        ريال
+                                    </h4>
+                                </div>
+
+                                <div class="address-field">
+                                    <h4>
+                                        كوبون خصم
+                                    </h4>
+                                    <div class="promo">
+                                        <form action="" class="">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control form-control-lg"
+                                                    placeholder="EX:12222" name="coupon" id="coupon">
+                                                <button type="submit" class="input-group-text">
+                                                    تطبيق
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="address-field">
+                                    <h2>
+                                        الإجمالي
+                                    </h2>
+                                    <h2><span id="totalVal">523</span> ريال </h2>
+                                </div>
+                                <div class="address-field">
+                                    <h5>
+                                        <input type="checkbox" name="accept" id="accept">
+                                        أوافق علي شروط الخدمة وألتزم بها قراءة
+                                    </h5>
+                                </div>
+                                <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#done-order-modal"> تأكيد الطلب
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="done-order-modal" tabindex="-1" aria-labelledby="done-order-modalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content tabs-modal">
+                    <form id="order-form" method="POST"
+                        action="https://lustrio2.eaglefits.net/request_orders/order/store">
+                        <input type="hidden" name="_token" value="TazmCIC1GpGrWYcMZ1Lip5sGC7jyQNXCFAeUNU07">
+                        <div class="modal-body flex-column">
+                            <h3 class="text-center mb-3">
+                                مراجعة الطلب
+                            </h3>
+                            <div class="form">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-4">
+                                        <input value="Mohamed Mostafa" type="text" class="form-control" name="name"
+                                            id="name" placeholder="الأسم">
+                                    </div>
+                                    <div class="col-4">
+                                        <input value="mma1999250@gmail.com" type="email" class="form-control"
+                                            name="email" id="email" placeholder="البريد">
+                                    </div>
+                                    <div class="col-4">
+                                        <input value="+201142914295" type="tel" class="form-control" id="phone"
+                                            name="phone" placeholder="الجوال">
+                                    </div>
+                                    <div class="col-6">
+                                        <textarea class="form-control" name="address" id="address" placeholder="العنوان">6 October city , Degla Palms 6 October City
+                                        </textarea>
+                                    </div>
+                                    <div class="col-6">
+                                        <textarea class="form-control" name="notes" id="notes"
+                                        placeholder="ملاحظات"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">إرسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12 mb-5 text-center footer-block">
+                    <img class="img-fluid" src="assets/img/lustrino2-footer.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-9 mb-4 mb-md-0 footer-block">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#about" class="text-white">من نحن</a>
+                        </li>
+                        <li>
+                            <a href="#branches" class="text-white">أين تجدنا</a>
+                        </li>
+                        <li>
+                            <a href="#products" class="text-white">أفضل منتجاتنا</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-9 mb-4 mb-md-0 footer-block social-links">
+                    <h3>تابعنا</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/22222222" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-10 mb-4 mb-md-0 footer-block">
+                    <h3>إشترك في نشرة أخبارنا</h3>
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-lg" placeholder="البريد الالكتروني">
+                        <button type="submit" class="input-group-text btn-success"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="lower-footer">
+            <p> © جميع الحقوق محفوظة</p>
+            <p>
+                2022
+            </p>
+            <a href="https://softwarecloud2.com">Software Cloud 2</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+    <script src="https://lustrio2.eaglefits.net/js/main.js"></script>
+    <script src="https://lustrio2.eaglefits.net/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.5.1/sweetalert2.min.js"
+        integrity="sha512-MV9Mmx+DfPYZTCXTkQhNUq2EWuAUU/fAm/HPYdEekvJr1W0Ko7RgdwFpOVG/vZXyQRKI+Ojxp/Un8xAe61oaiA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(document).on('click', '#fav-btn', function (e) {
+                var product_id = $(this).attr('product_id');
+                var url = "https://lustrio2.eaglefits.net/favorite/favorite/:id";
+                url = url.replace(':id', product_id);
+                var that = $(this);
+
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: {
+                        _token: "nr9NYrErTueZl5w5EhwhdGZUNFgmtmoxnAejKO5Y",
+                        _method: 'POST'
+                    },
+                    success: function (response) {
+                        if (response == 1) {
+                            that.html('<i style=" color: #f87f7f; " class="fi fi sr-heart"></i>');
+                        } else {
+                            that.html('<i class="fi fi sr-heart"></i>');
+                        }
+                    }
+                });
+            });
+        });
+
+        function showAlert() {
+            Swal.fire({
+                title: 'LUSTRINO 2 تصفح',
+                html: `<div style=" padding: 52px; " class="row">
+                    <div class="col-md-6">
+                           <div class="box">
+                                <img src ="https://lustrio2.eaglefits.net/img/page.png" class="img-fluid">
+                               <p>للأعمال</p>
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                                 <div class="box">
+                               <img src ="https://lustrio2.eaglefits.net/img/user.png" class="img-fluid">
+                               <p>للأفراد</p>
+                            </div>
+                             </div>
+                      </div>`,
+                type: 'warning',
+                showCancelButton: false,
+                showConfirmButton: false,
+                customClass: 'swal-wide',
+
+            });
+        }
+    </script>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

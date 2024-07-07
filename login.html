@@ -1,0 +1,268 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.5.1/sweetalert2.min.css"
+        integrity="sha512-y6TjkITSFkRB9mZmDaJyDOsyHsYvOo3Np3iAKe02HgMDP4L4vbmbhlzNpbbIVC1x+GUUHvepTd1BKDe4kC6kNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta property="og:site_name" content="LUSTRIO2">
+    <meta property="og:title" content="LUSTRIO2">
+    <meta property="og:description" content="LUSTRIO2">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image" content="https://lustrio2.eaglefits.net/img/logo.png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" href="assets/img/icon.png">
+    <title>LUSTRIO2</title>
+</head>
+
+<body id="Home-page">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/lustrino2.png" alt="" class="img-fluid"></a>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="search-item">
+                        <form action="" class="">
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-lg"
+                                    placeholder="أبحث عن ما تريد....">
+                                <button type="submit" class="input-group-text">
+                                    <i class="fal fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </li>
+                    <div class="shcut">
+                        <li>
+                            <a class="nav-link" href="https://lustrio2.eaglefits.net/favorite/index" tabindex="-1">
+                                <i class="fi fi-sr-heart"></i> </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://lustrio2.eaglefits.net/cart" tabindex="-1">
+                                <i class="fi fi-sr-shopping-cart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://lustrio2.eaglefits.net/user/profile" tabindex="-1">
+                                <i class="fi fi-sr-user"></i> </a>
+                        </li>
+                    </div>
+                </ul>
+                <i class="fa fa-bars mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <main class="page">
+        <div class="msg">
+            <a href="#contact-us">
+                <img src="assets/img/message.gif" alt="" class="img-fluid">
+            </a>
+        </div>
+        <section class="login-page">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-5 col-sm-8 col-10">
+                        <div class="white-box">
+                            <div class="title">
+                                <h2>
+                                    مرحبا بك
+                                </h2>
+                            </div>
+                            <!-- Form START -->
+                            <form method="POST" action="https://lustrio2.eaglefits.net/login">
+                                <input type="hidden" name="_token" value="SgACgRLUbDyEp3hgjb4e2q4dZGV89XI1K3WZUDWE">
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" name="email" value="" required
+                                        placeholder="البريد الإلكتروني" id="exampleInputEmail1">
+                                </div>
+                                <!-- Password -->
+                                <div class="mb-3">
+                                    <input type="password" class="form-control" name="password" required
+                                        placeholder="كلمة المرور" id="inputPassword5">
+                                </div>
+                                <!-- Check box -->
+                                <div class="mb-3 d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                                        <label class="form-check-label" for="remember">
+                                            تذكرني
+                                        </label>
+                                    </div>
+                                    <div class="text-primary-hover">
+                                        <a class="btn btn-link" href="https://lustrio2.eaglefits.net/password/reset">
+                                            هل نسيت كلمة المرور؟
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="align-items-center mt-0">
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary mb-0" type="submit">تسجيل
+                                            الدخول</button>
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <a class="" href="https://lustrio2.eaglefits.net/register">
+                                        ليس لديك حساب؟ قم بانشاء حساب الأن
+                                    </a>
+                                    <i class="fal fa-long-arrow-left"></i>
+                                </div>
+                            </form>
+                            <!-- Form END -->
+                        </div>
+                    </div>
+                </div> <!-- Row END -->
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12 mb-5 text-center footer-block">
+                    <img class="img-fluid" src="assets/img/lustrino2-footer.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-9 mb-4 mb-md-0 footer-block">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#about" class="text-white">من نحن</a>
+                        </li>
+                        <li>
+                            <a href="#branches" class="text-white">أين تجدنا</a>
+                        </li>
+                        <li>
+                            <a href="#products" class="text-white">أفضل منتجاتنا</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-9 mb-4 mb-md-0 footer-block social-links">
+                    <h3>تابعنا</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/22222222" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-10 mb-4 mb-md-0 footer-block">
+                    <h3>إشترك في نشرة أخبارنا</h3>
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-lg" placeholder="البريد الالكتروني">
+                        <button type="submit" class="input-group-text btn-success"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="lower-footer">
+            <p> © جميع الحقوق محفوظة</p>
+            <p>
+                2022
+            </p>
+            <a href="https://softwarecloud2.com">Software Cloud 2</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+    <script src="https://lustrio2.eaglefits.net/js/main.js"></script>
+    <script src="https://lustrio2.eaglefits.net/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.5.1/sweetalert2.min.js"
+        integrity="sha512-MV9Mmx+DfPYZTCXTkQhNUq2EWuAUU/fAm/HPYdEekvJr1W0Ko7RgdwFpOVG/vZXyQRKI+Ojxp/Un8xAe61oaiA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(document).on('click', '#fav-btn', function (e) {
+                var product_id = $(this).attr('product_id');
+                var url = "https://lustrio2.eaglefits.net/favorite/favorite/:id";
+                url = url.replace(':id', product_id);
+                var that = $(this);
+
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: {
+                        _token: "nr9NYrErTueZl5w5EhwhdGZUNFgmtmoxnAejKO5Y",
+                        _method: 'POST'
+                    },
+                    success: function (response) {
+                        if (response == 1) {
+                            that.html('<i style=" color: #f87f7f; " class="fi fi sr-heart"></i>');
+                        } else {
+                            that.html('<i class="fi fi sr-heart"></i>');
+                        }
+                    }
+                });
+            });
+        });
+
+        function showAlert() {
+            Swal.fire({
+                title: 'LUSTRINO 2 تصفح',
+                html: `<div style=" padding: 52px; " class="row">
+                    <div class="col-md-6">
+                           <div class="box">
+                                <img src ="https://lustrio2.eaglefits.net/img/page.png" class="img-fluid">
+                               <p>للأعمال</p>
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                                 <div class="box">
+                               <img src ="https://lustrio2.eaglefits.net/img/user.png" class="img-fluid">
+                               <p>للأفراد</p>
+                            </div>
+                             </div>
+                      </div>`,
+                type: 'warning',
+                showCancelButton: false,
+                showConfirmButton: false,
+                customClass: 'swal-wide',
+
+            });
+        }
+    </script>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
